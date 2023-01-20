@@ -1,0 +1,17 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: example-task-name
+spec:
+  params:
+    - name: name
+      type: string
+      description: name
+      default: Martin
+  steps:
+    - name: test
+      image: registry.access.redhat.com/ubi8/ubi:8.6-943
+      args: ["echo", "$(params.name)"]
+  volumes:
+    - name: example-volume
+      emptyDir: {}
