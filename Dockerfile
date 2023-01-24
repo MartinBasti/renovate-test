@@ -1,4 +1,4 @@
-FROM regsitry.fedoraproject.org/fedora:35 as test
+FROM registry.fedoraproject.org/fedora:35 as test
 
 RUN echo "hey"
 
