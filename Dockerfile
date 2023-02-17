@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:36@sha256:e04e1f5b791c109a33f95512bcf8c2a99b33b7e2c6da029b6a4eaccb1eea3025 as test
+FROM registry.fedoraproject.org/fedora:39@sha256:edf3e9667253db9e5b592de98426cd6db82a381262020d8af423b502977ff0bc as test
 
 RUN echo "hey"
 
