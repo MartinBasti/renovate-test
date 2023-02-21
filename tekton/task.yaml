@@ -10,7 +10,7 @@ spec:
       default: Martin
   steps:
     - name: test
-      image: registry.access.redhat.com/ubi8/ubi:8.6-943
+      image: registry.access.redhat.com/ubi8/ubi:8.7-1090
       args: ["echo", "$(params.name)"]
   volumes:
     - name: example-volume
